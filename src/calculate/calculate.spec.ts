@@ -10,6 +10,9 @@ describe('Rule: Get Number from string', () => {
   test('calculate "" return 0', async () => {
     expect(calculate('')).toEqual(0);
   });
+  test('calculate "12" return 12', async () => {
+    expect(calculate('12')).toEqual(12);
+  });
 });
 describe('Rule: Sum 2 numbers', () => {
   test('calculate "1,2" return 3', async () => {
