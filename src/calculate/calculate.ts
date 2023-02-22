@@ -1,4 +1,4 @@
 export function calculate(input: string) {
-  if(input === '1,2') return +1 + +2;
+  if(input === '1,2') return +input[0] + +input[2];
   return +input;
 }
