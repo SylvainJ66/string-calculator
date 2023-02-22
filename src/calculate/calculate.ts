@@ -1,5 +1,14 @@
 export function calculate(input: string) {
-  if(input === '1,2') return +input.slice(0,1) + +input.slice(1 + 1, input.length);
-  if(input === '10,20') return +input.slice(0,2) + +input.slice(2 + 1, input.length);
+  let comma = 1;
+  if (input[1] === ',') {
+
+    return +input.slice(0, comma) + +input.slice(comma + 1, input.length);
+  }
+  comma = 2;
+  if (input[comma] === ',') {
+
+    return +input.slice(0, comma) + +input.slice(comma + 1, input.length);
+  }
+
   return +input;
 }
