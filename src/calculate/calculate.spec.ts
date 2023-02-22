@@ -9,4 +9,9 @@ describe('Feature: Calculate number', () => {
       expect(calculate('1')).toEqual(1);
     });
   });
+  describe('Rule: Sum 2 numbers', () => {
+    test('calculate "1,2" return 3', async () => {
+      expect(calculate('1,2')).toEqual(3);
+    });
+  });
 });
