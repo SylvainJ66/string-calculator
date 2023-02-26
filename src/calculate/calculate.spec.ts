@@ -29,4 +29,9 @@ describe('Feature: Calculate number', () => {
       expect(calculate('23,541')).toEqual(564);
     });
   });
+  describe('Rule: Empty string', () => {
+    test('calculate "" return 0', async () => {
+      expect(calculate('')).toEqual(0);
+    });
+  });
 });
