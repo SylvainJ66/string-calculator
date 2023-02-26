@@ -20,7 +20,7 @@ describe('Feature: Calculate number', () => {
       expect(calculate('2,3')).toEqual(5);
     });
     test('calculate "12,3" return 15', async () => {
-      expect(calculate('12,3')).toEqual(5);
+      expect(calculate('12,3')).toEqual(15);
     });
   });
 });
