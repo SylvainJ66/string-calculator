@@ -12,4 +12,9 @@ describe('Feature: Calculate number', () => {
       expect(calculate('12')).toEqual(12);
     });
   });
+  describe('Rule: Add two numbers', () => {
+    test('calculate "1,2" return 3', async () => {
+      expect(calculate('1,2')).toEqual(3);
+    });
+  });
 });
