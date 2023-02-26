@@ -1,9 +1,8 @@
 export function calculate(input: string) {
   if (input.includes(',')) {
-    let commaIndex = 1;
+    const commaIndex = input.indexOf(',');
     if (input[commaIndex] === ',')
-      return +input[0] + +input[2];
-    return +input.substring(0, 2) + +input[3];
+      return +input.substring(0, commaIndex) + +input[commaIndex + 1];
   }
   return +input;
 }
