@@ -34,4 +34,9 @@ describe('Feature: Calculate number', () => {
       expect(calculate('')).toEqual(0);
     });
   });
+  describe('Rule: Calculate n numbers', () => {
+    test('calculate "1,2,3" return 6', async () => {
+      expect(calculate('1,2,3')).toEqual(6);
+    });
+  });
 });
