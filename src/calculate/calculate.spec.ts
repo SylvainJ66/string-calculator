@@ -8,5 +8,8 @@ describe('Feature: Calculate number', () => {
     test('calculate "1" return 1', async () => {
       expect(calculate('1')).toEqual(1);
     });
+    test('calculate "12" return 12', async () => {
+      expect(calculate('12')).toEqual(12);
+    });
   });
 });
