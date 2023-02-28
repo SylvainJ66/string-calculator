@@ -1,5 +1,11 @@
 export function calculate(input: string) {
-  if(input === '1,2') return +input.slice(0,1) + +input.slice(1+1,3)
-  if(input === '10,20') return +input.slice(0,2) + +input.slice(2+1,input.length)
+  const i = 1;
+  while(input[i] === ',') {
+    return +input.slice(0, i) + +input.slice(i + 1, 3);
+  }
+  if(input[i] === ',') {
+    const i = 2;
+    return +input.slice(0, i) + +input.slice(i + 1, input.length);
+  }
   return +input
 }
