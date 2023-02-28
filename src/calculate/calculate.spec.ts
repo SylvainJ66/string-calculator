@@ -19,5 +19,8 @@ describe('Feature: Calculate number', () => {
     test('calculate "10,20" return 30', async () => {
       expect(calculate('10,20')).toEqual(30);
     });
+    test('calculate "100,200" return 300', async () => {
+      expect(calculate('100,200')).toEqual(300);
+    });
   });
 });
