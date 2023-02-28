@@ -23,4 +23,9 @@ describe('Feature: Calculate number', () => {
       expect(calculate('100,200')).toEqual(300);
     });
   });
+  describe('Rule: Sum three numbers', () => {
+    test('calculate "1,2,3" return 6', async () => {
+      expect(calculate('1,2,3')).toEqual(6);
+    });
+  });
 });
